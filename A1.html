@@ -1,0 +1,46 @@
+<script>
+	let income = +prompt("Enter income");
+	    income=Number(income);
+		
+		income -=12400;
+		
+		income = income < 0 ? 0 :income;
+	
+	
+
+	let rate_1=10;//%;
+	let rate_2=12;//%;
+	let rate_3=22;//%;
+	let rate_4=24;//%;
+	let rate_5=32;//%;
+	let rate_6=35;//%;
+	let rate_7=37;//%;
+
+	
+	if(income<=9875){
+		tax = income* rate_1/100;
+		console.log(tax);
+	}else if(income>=9875&&income<=40125){
+		tax = (9875* rate_1/100)+((income-9875)* rate_2/100);
+		console.log(tax);
+	}else if(income>=40126&&income<=85525){
+		tax = (9875* rate_1/100)+(30250* rate_2/100)+((income-40126)* rate_3/100);
+		console.log(tax);
+	}else if(income>=85526&&income<=163300){
+		tax = (9875* rate_1/100)+(30250* rate_2/100)+(45400* rate_3/100)+((income-85525)* rate_4/100);
+		console.log(tax);
+	}else if(income>=163301&&income<=207350){
+		tax = (9875* rate_1/100)+(30250* rate_2/100)+(45400* rate_3/100)+(77775* rate_4/100)+((income-163301)* rate_5/100);
+		console.log(tax);
+	}else if(income>=207351&&income<=518400){
+		tax = (9875* rate_1/100)+(30250* rate_2/100)+(45400* rate_3/100)+(77775* rate_4/100)+(44050* rate_5/100)+((income-20751)* rate_6/100);
+		console.log(tax);
+	}else if(income>=518401){
+		tax = (9875* rate_1/100)+(30250* rate_2/100)+(45400* rate_3/100)+(77775* rate_4/100)+(44050* rate_5/100)+(311050* rate_6/100)+((income-518401)* rate_7/100);
+		console.log(tax);
+	}
+	
+	
+
+
+</script>
